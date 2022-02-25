@@ -41,6 +41,7 @@ padding: 0 3%;
   justify-content: center;
   background-image: url(./Assets/Pizza.jpg);
   height: 60vh;
+  padding: 2% 0;
 }
 
 .cta h1 {
@@ -49,7 +50,8 @@ padding: 0 3%;
 
 #order-pizza {
   font-size: 20px;
-  padding: 1%
+  padding: 1%;
+  background-color: white;
 }
 
 /* Form Styling: */

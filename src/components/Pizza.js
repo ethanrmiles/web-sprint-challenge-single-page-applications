@@ -1,10 +1,8 @@
-//Imports: 
-import Header from "./header"
+
 
 export default function Pizza () {
     return (
         <>
-            <Header />
             <div className="form-container">
                 <div className='form-cta'>
                     <h2>Build Your own Pizza</h2>
