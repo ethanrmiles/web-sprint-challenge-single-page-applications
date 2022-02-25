@@ -1,22 +1,19 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { Route, Link, Switch } from 'react-router-dom'
+
+
+//Components used for Routes: 
 // import DeliveryOptions from './components/deliveryOptions'
+import Header from './components/header';
+import Home from './components/Home';
+import Pizza from './components/Pizza'
 
 const App = () => {
   return (
    <>
-    <header>
-     <div className="title">
-       <h2>Lambda Eats</h2>
-     </div>
-     <div className="nav">
-      <div className="nav-btn active" id='home'>Home</div>
-      <div className="nav-btn " id='help'>Help</div>
-     </div>
-   </header>
-   <section className="cta">
-     <h1>Your favorite food, delivered while coding</h1>
-     <button id='order-pizza'>Pizza?</button>
-   </section>
+   <Header />
+   <Home />
+   <Pizza />
    <section className="delivery-showcase">
        {/* <DeliveryOptions /> */}
    </section>
