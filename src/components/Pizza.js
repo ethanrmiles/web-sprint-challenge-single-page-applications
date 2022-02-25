@@ -11,7 +11,7 @@ export default function Pizza () {
                     <div className="cta"></div>
                 </div>
             <form id='pizza-form'>
-                <h3>Build Your own Pizza</h3>
+                
                <div className="form-comp">
                     <h4>Choice of Size</h4>
                         <select id='size-dropdown'>
@@ -23,7 +23,8 @@ export default function Pizza () {
                </div>
                <div className="form-comp">
                    <h4>Choice of Sauce</h4>
-                   <label>Original Red
+                    <div className="column">
+                    <label>Original Red
                         <input 
                          type='radio'
                          name='sauce'
@@ -59,9 +60,11 @@ export default function Pizza () {
                          // checked={}
                         />
                    </label>
+                    </div>
                </div>
               <div className="form-comp">
                   <h4>Add Toppings</h4>
+                    <div className="column-wrapper">
                     <div className="column">
                     <label>Pepperoni
                         <input
@@ -102,6 +105,7 @@ export default function Pizza () {
                         />
                    </label>
                     </div>
+                    </div>
               </div>
               <div className="form-comp">
                   <h4>Choice of Substitute</h4>
@@ -133,7 +137,7 @@ export default function Pizza () {
                     />
                 </label>
             </div>
-            <div className="submit container">
+            <div className="submit-container">
                 <button id='order-button'>Add to Order</button>
             </div>
             </form>
