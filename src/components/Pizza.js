@@ -1,3 +1,9 @@
+import * as yup from 'yup'
+import schema from '../validation/schema'
+
+//Initial form errors: 
+
+//initial form values: 
 
 
 export default function Pizza () {
@@ -9,7 +15,7 @@ export default function Pizza () {
                     <div className="cta"></div>
                 </div>
             <form id='pizza-form'>
-                
+                <h1>Pizza Form</h1>
                <div className="form-comp">
                     <h4>Choice of Size</h4>
                         <select id='size-dropdown'>
@@ -128,6 +134,7 @@ export default function Pizza () {
               </div>
             <div className="form-comp">
                 <h4>Contact Info</h4>
+                <h5>name must be at least 2 characters</h5>
                 <label>name
                     <input
                         type='text'
